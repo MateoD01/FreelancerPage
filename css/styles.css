@@ -16,7 +16,14 @@ y que no se cambie cuando agrego padding (si pongo 400px tiene eso)*/
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
 }
+/* Scroll Snap */
+.servicios, .navegacion-principal, .formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
